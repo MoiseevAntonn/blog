@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 class Question(models.Model):
@@ -7,6 +8,7 @@ class Question(models.Model):
     pub_date = models.DateTimeField('date publsihed')
     def __str__(self):
         return self.question_text
+
 
 
 class Choice(models.Model):
